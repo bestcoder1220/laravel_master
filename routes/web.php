@@ -11,9 +11,9 @@
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); //primary
 });
-Route::view('/good', 'good'); // view route
+Route::view('/good', 'good'); // view method
 Route::get('/test', function(){
 	return 'Test'; // return text
 });
