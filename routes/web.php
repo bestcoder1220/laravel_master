@@ -28,7 +28,7 @@ Route::get('/users/{userId}/photofolios/{pId}', function($userId, $pId){
 	return 'User: '.$userId.', Photofolio: '.$pId;  //route params
 });
 Route::get('users/{name?}', function($name = 'Best'){
-    return $name;
+    return $name; //optional parameter
 });
 Route::middleware('checkAge')->group(function() {
     Route::get('/check-users/{age}', function ($age) {
