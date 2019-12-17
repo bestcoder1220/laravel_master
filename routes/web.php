@@ -14,8 +14,8 @@ Route::get('/', function () {
     return view('welcome'); //primary
 });
 Route::view('/good', 'good'); // view method
-Route::get('/test', function(){
-	return 'Test'; // return text
+Route::post('/save', function(){
+	return 'Save'; // return text
 });
 Route::match(['get', 'post'], '/dashboard', function(){
 	//match call method type
