@@ -15,6 +15,7 @@
 Route::get('/', function () {
     return view('welcome'); //primary
 });
+
 Route::get('user/{id}', 'UserController@show');
 Route::resource('product', 'ProductController');
 
